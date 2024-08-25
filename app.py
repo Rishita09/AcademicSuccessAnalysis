@@ -336,15 +336,13 @@ elif options == "Team and Responsibilities":
 
     Progress is monitored through:
     - **Regular Team Meetings:** Scheduled meetings to review progress, address issues, and adjust plans as necessary.
-    - **Project Management Tools:** Utilization of tools like Trello or Asana to track tasks, deadlines, and milestones.
-    - **Progress Reports:** Weekly or bi-weekly reports summarizing accomplishments, challenges, and next steps.
+    - **Progress Reports:** Daily reports summarizing accomplishments, challenges, and next steps.
 
     #### 3. Measuring Success of Completed Project
 
     Success is measured by:
     - **Achievement of Project Goals:** Assessing whether the project objectives and deliverables have been met.
     - **Quality of Deliverables:** Evaluating the quality and accuracy of the models, visualizations, and reports.
-    - **Stakeholder Feedback:** Gathering feedback from stakeholders or evaluators to gauge the effectiveness and impact of the project.
     - **Performance Metrics:** Analyzing performance metrics such as model accuracy, F1 score, and other relevant KPIs.
 
     #### 4. Professional Strengths and Weaknesses
