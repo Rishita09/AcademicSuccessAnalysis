@@ -205,6 +205,7 @@ elif options == 'Model Performance':
         It performed better in detecting positive classes but struggled with the negative ones.
         """
     )
+    st.image('lr.png')
 
     st.subheader("XGBoost")
     st.write(
@@ -215,6 +216,7 @@ elif options == 'Model Performance':
         It demonstrated stronger generalization and slightly improved overall performance.
         """
     )
+    st.image('xgb.png')
 
     st.subheader("LightGBM")
     st.write(
@@ -225,6 +227,7 @@ elif options == 'Model Performance':
         making it effective for imbalanced data scenarios.
         """
     )
+    st.image('light.png')
 
     st.subheader("Voting Classifier")
     st.write(
@@ -235,6 +238,7 @@ elif options == 'Model Performance':
         and overall performance. It leverages the strengths of various models to achieve a more robust prediction.
         """
     )
+    st.image('vc.png')
 
     st.subheader("Random Forest Classifier")
     st.write(
@@ -245,6 +249,8 @@ elif options == 'Model Performance':
         It also provided a balanced precision and recall, making it the best performing model overall.
         """
     )
+    st.image('rfc.png')
+
     st.subheader("Conclusion")
     st.write(
         """
