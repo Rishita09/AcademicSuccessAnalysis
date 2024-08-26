@@ -313,6 +313,32 @@ elif options == 'Recommendations':
 elif options == 'Reflection':
     st.write("### 8. Reflection")
     st.write("**Challenges Faced:** - Data Quality: Handling missing and inconsistent data. - Model Tuning: Balancing model accuracy and interpretability.")
+    st.write(
+        """
+        **Challenges Faced and Improvements:**
+        
+        One significant challenge encountered was dealing with class imbalance, which initially resulted in an RFC accuracy of 63%, but with poor performance on minority classes. To address this, we implemented several strategies:
+
+        1. **Standardization and SMOTE:** We applied standardization to the features and utilized SMOTE (Synthetic Minority Over-sampling Technique) to balance the classes, which helped improve the model's ability to recognize the minority class.
+
+        2. **Hyperparameter Tuning:** We performed hyperparameter tuning using GridSearchCV with the following parameter grid:
+
+            ```python
+            param_grid = {
+                'n_estimators': [50, 100, 200],
+                'max_depth': [None, 10, 20, 30],
+                'min_samples_split': [2, 5, 10]
+            }
+            ```
+
+           This approach allowed us to optimize the model settings, significantly improving performance.
+
+        3. **Cross-Validation:** We used cross-validation to evaluate the model, resulting in a Cross-Validated F1 Score of 0.730, which indicated better generalization on unseen data.
+
+        Despite these improvements, the final model's accuracy was 0.702, with an F1 score of 0.57. The classification report revealed that the model still struggled with the minority class (precision: 0.43, recall: 0.18), indicating the challenge of achieving a balance between precision and recall in imbalanced datasets. The ROC-AUC score of 0.521 and Precision-Recall AUC score of 0.616 reflected these challenges. However, the improvements made through tuning and resampling strategies contributed to a more robust and reliable model.
+        """
+    )
+    st.image('rfc-old.png')
     st.write("**Future Directions:** - Explore additional features that may improve model performance. - Conduct longitudinal studies to track student success over time.")
 
 elif options == "Team and Responsibilities":
