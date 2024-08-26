@@ -313,6 +313,7 @@ elif options == 'Recommendations':
 elif options == 'Reflection':
     st.write("### 8. Reflection")
     st.write("**Challenges Faced:** - Data Quality: Handling missing and inconsistent data. - Model Tuning: Balancing model accuracy and interpretability.")
+    st.image('rfc-old.png')
     st.write(
         """
         **Challenges Faced and Improvements:**
@@ -338,7 +339,6 @@ elif options == 'Reflection':
         Despite these improvements, the final model's accuracy was 0.702, with an F1 score of 0.57. The classification report revealed that the model still struggled with the minority class (precision: 0.43, recall: 0.18), indicating the challenge of achieving a balance between precision and recall in imbalanced datasets. The ROC-AUC score of 0.521 and Precision-Recall AUC score of 0.616 reflected these challenges. However, the improvements made through tuning and resampling strategies contributed to a more robust and reliable model.
         """
     )
-    st.image('rfc-old.png')
     st.write("**Future Directions:** - Explore additional features that may improve model performance. - Conduct longitudinal studies to track student success over time.")
 
 elif options == "Team and Responsibilities":
